@@ -1,0 +1,80 @@
+.true{
+	display: block;
+}
+
+.false{
+	display: none;
+}
+
+
+.banner-image{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90%;
+	max-height: 90%;
+	/*border: dashed red 2px;*/
+}
+
+.banner-container > p{
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	font-size: 14pt;
+	/*border: dashed red 2px;*/
+}
+
+
+@keyframes fade-in{
+	from{opacity: 0.0;}
+	to{opacity:1.0;}
+}
+
+@keyframes fade-out{
+	from{opacity: 1.0;}
+	to{opacity: 0.0;}
+}
+
+.clear{
+	display:none;
+}
+
+
+
+
+
+/*The bottom part was copied and pasted*/
+
+
+.stage{
+	width: 300px;
+	height: 300px;
+	border: dashed red 1px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.stage > img {
+	max-width: 300px;
+	max-height:300px;
+	position: absolute;
+}
+
+.stage > img:nth-of-type(1){
+	animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+}
+
+.stage > img:nth-of-type(2){
+	z-index: 10;
+}
+
+.stage > img:nth-of-type(n+3){
+    display: none;
+}
+
+@keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+}

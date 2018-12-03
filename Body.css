@@ -1,0 +1,25 @@
+.body-container{
+	border: solid black .2em;
+	width: 9em;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Questrial', sans-serif;
+	text-align: center;
+	font-size: 12pt;
+}
+
+.body-container:hover{
+	background-color: black;
+	color: white;
+	border: solid black .2em;
+	style:bold;
+}
+
+
+/*
+.book-button{
+	border: solid black 35px;
+	border-image: url('../images/SteamerBorder.png') 35 repeat;
+	border-width: 35px;
+}
+*/
